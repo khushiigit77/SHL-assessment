@@ -1,0 +1,18 @@
+# Core (required)
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+scikit-learn==1.5.2          # pinned: newer wheels were blocked by Windows Smart App Control on the dev machine
+librosa>=0.10
+soundfile>=0.12
+matplotlib>=3.7
+jupyter>=1.0
+nbconvert>=7.0
+ipykernel>=6.0
+
+# Optional - pipeline degrades gracefully if any are missing
+faster-whisper>=1.0           # ASR transcripts (preferred backend, CPU int8)
+# openai-whisper>=20231117    # alternative ASR backend (used only if faster-whisper is absent)
+sentence-transformers>=2.2    # sentence embeddings + transformers for the CoLA acceptability model
+spacy>=3.7                    # POS / dependency features; then: python -m spacy download en_core_web_sm
+catboost>=1.2                 # gradient-boosted trees

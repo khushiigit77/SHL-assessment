@@ -1,0 +1,37 @@
+# Competition data (restricted - never commit)
+Dataset_Final/
+data/
+*.wav
+*.mp3
+*.flac
+
+# Generated caches, model weights, outputs
+cache/
+outputs/
+*.pt
+*.bin
+*.safetensors
+*.onnx
+catboost_info/
+submission.csv
+
+# Credentials
+kaggle.json
+.kaggle/
+.env
+*.pem
+*.key
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
